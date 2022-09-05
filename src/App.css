@@ -1,38 +1,300 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;700&family=Open+Sans:wght@300;600&display=swap');
+
+:root {
+  --beige: #E7E0D1;
+  --grey: #43454F;
+  --green: #768E77;
+  --button-pressed: #4D5A4D;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+h1 {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 94px;
+  line-height: 83.1%;
+  color: var(--beige);
+}
+
+h2 {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
   text-align: center;
+  line-height: 51px;
+  color: var(--grey);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subtitle {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--grey);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.3%;
+  color: var(--grey);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.3%;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.main-button {
+  width: 277px;
+  height: 78px;
+  padding: 20px 80px;
+  background: var(--green);
+  border-radius: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 156.3%;
+  color: var(--beige);
+}
+
+.main-button:hover {
+  background: #768E77;
+  opacity: 0.8;
+}
+
+.main-button-presssed {
+  background: var(--button-pressed);
+}
+
+.secondary-button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.3%;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding: 20px 80px;
+  border: 1px solid #768E77;
+  border-radius: 10px;
+}
+
+.secondary-button:hover {
+  background: var(--green);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.3%;
+}
+
+.secondary-button-pressed {
+  background: var(--button-pressed);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+  width: 462px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  padding-top: 42px;
+}
+
+nav {
+  background-color: var(--grey);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 127px;
+  color: #FFFFFF;
+}
+
+.banner {
+  margin-top: 0;
+  background-color: var(--grey);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  padding-top: 144px;
+}
+
+.banner__left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 80px;
+}
+
+.banner__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  color: var(--beige);
+  gap: 30px;
+}
+
+.skills {
+  padding: 120px 0;
+  background-color: var(--beige);
+}
+
+.skills__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
 }
