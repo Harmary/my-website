@@ -1,6 +1,6 @@
 import {Card} from './Card'
 import analysis from '../assets/presentation2.png'
-import design from '../assets/pen-tool 2.png'
+import design from '../assets/pen-tool.png'
 import layout from '../assets/website-design 2.png'
 
 export function Skills(){
@@ -30,11 +30,14 @@ export function Skills(){
             <h2>Навыки</h2>
             <div className="container">
                 <div className="skills__cards">
-                    {cards.map( (card,index) =>
+                    {
+                    cards.map( (card,index) =>
                     <Card key={index} card={card}/>
-                    )}
+                    )
+                    }
+                    
                 </div>
             </div>
         </div>
-    )
+    );
 }
