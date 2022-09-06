@@ -280,14 +280,13 @@ nav {
 
 .skills {
   padding: 120px 0;
-  background-color: var(--beige);
+  background-color: #fff;
 }
 
 .skills__cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 80px;
 }
 
 .card {
@@ -301,4 +300,44 @@ nav {
 
 .card p{
   text-align: center;
+}
+
+.projects{
+  background: var(--beige);
+  padding: 120px;
+}
+
+.carousel,.skills__cards{
+  margin-top: 80px;
+}
+
+.carousel-item{
+
+}
+
+.carousel-block{
+  margin-left: 25px;
+}
+
+.arrow-left, .arrow-right{
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  z-index: 1000;
+  min-width: 50px;
+  min-height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  opacity: 1;
+  background-color:inherit;
+}
+
+.arrow-left{
+  left: 0;
+  background-image: url('./assets/left-arrow.png') !important; 
+}
+
+.arrow-right{
+  right: 0;
+  background-image: url('./assets/right-arrow.png') !important;
 }
