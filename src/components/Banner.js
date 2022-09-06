@@ -10,7 +10,7 @@ export function Banner (){
                         <h1>Мария Харламова</h1>
                         <p>Занимаюсь UI/UX дизайном и фронтенд разработкой. Моя страсть - стремиться к новому, моя цель - дарить миру удобные и красивые программные продукты.</p>
                     </div>
-                    <a src="#contacts" className="main-button">Написать</a>
+                    <a href="#footer" className="main-button">Написать</a>
                 </div>
                 <img alt="my photo" src={bannerPhoto}></img>
             </div>

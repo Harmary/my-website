@@ -26,7 +26,7 @@ export function Skills(){
     ];
        
     return(
-        <div className="skills">
+        <div id='skills' className="skills">
             <h2>Навыки</h2>
             <div className="container">
                 <div className="skills__cards">

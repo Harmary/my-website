@@ -159,6 +159,7 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 156.3%;
+  cursor: pointer;
   color: var(--beige);
 }
 
@@ -181,6 +182,7 @@ h2 {
   opacity: 0.7;
   padding: 20px 80px;
   border: 1px solid #768E77;
+  cursor: pointer;
   border-radius: 10px;
 }
 
@@ -298,28 +300,32 @@ nav {
   gap: 30px;
 }
 
-.card p{
+.card p {
   text-align: center;
 }
 
-.projects{
+.projects {
   background: var(--beige);
+}
+
+.projects,.footer{
   padding: 120px;
 }
 
-.carousel,.skills__cards{
+.carousel,
+.skills__cards,
+.contacts {
   margin-top: 80px;
 }
 
-.carousel-item{
+.carousel-item {}
 
-}
-
-.carousel-block{
+.carousel-block {
   margin-left: 25px;
 }
 
-.arrow-left, .arrow-right{
+.arrow-left,
+.arrow-right {
   position: absolute;
   outline: 0;
   transition: all .5s;
@@ -329,15 +335,66 @@ nav {
   cursor: pointer;
   padding: 10px;
   opacity: 1;
-  background-color:inherit;
+  background-color: inherit;
 }
 
-.arrow-left{
+.arrow-left {
   left: 0;
-  background-image: url('./assets/left-arrow.png') !important; 
+  background-image: url('./assets/left-arrow.png') !important;
 }
 
-.arrow-right{
+.arrow-right {
   right: 0;
   background-image: url('./assets/right-arrow.png') !important;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.contacts__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+
+.contact{
+  text-align: center;
+}
+
+#secondcol{
+  position: relative;
+}
+
+#secondcol::before, #secondcol::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    height: 70px;
+    width: 1px;
+    background-color: #000;
+}
+
+#secondcol::before{
+  left: -50px;
+}
+
+#secondcol::after{
+  right: -50px;
+}
+
+#firstcol .contact{
+  text-align: right;
+}
+
+#thirdcol .contact{
+  text-align: left;
 }
