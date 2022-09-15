@@ -21,7 +21,7 @@ export function Footer() {
                     </div>
                     <div className="contact">
                         <h3 className="subtitle">Резюме</h3>
-                        <p className="text"><a>Резюме разработчик</a><a>Резюме дизайнер</a></p>
+                        <p className="text"><a href="#">Резюме разработчик</a><a href="#">Резюме дизайнер</a></p>
                     </div>
                 </div>          
                 <div id="thirdcol" className="contacts__col">

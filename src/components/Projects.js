@@ -8,7 +8,7 @@ export function Projects() {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 768 },
-          items: 1,
+          items: 2,
           slidesToSlide: 1, // optional, default to 1.
         },
         tablet: {
@@ -48,9 +48,9 @@ export function Projects() {
                 customLeftArrow={<CustomLeftArrow/>}
                 customRightArrow={<CustomRightArrow/>}
             >
-                <img width={1000} alt='OliviaJewels' src={proj1}></img>
-                <img width={1000} alt='Ocean offer' src={proj2}></img>
-                <img width={1000} alt='Cards' src={proj3}></img>
+                <img width="100%" alt='OliviaJewels' src={proj1}></img>
+                <img width="100%"  alt='Ocean offer' src={proj2}></img>
+                <img width="100%"  alt='Cards' src={proj3}></img>
             </Carousel>
         </div>
     </div>

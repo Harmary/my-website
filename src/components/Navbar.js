@@ -1,4 +1,8 @@
+import React, { useState } from 'react';
+
+
 export function NavBar () {
+    const[pressedButton,setPressedButton] = useState(false)
     return(
         <nav>
             <div className="container nav">
@@ -9,7 +13,7 @@ export function NavBar () {
                 <li><a className="text link" href="#projects">проекты</a></li>
                 <li><a className="text link" href="#contacts">контакты</a></li>
             </ul>
-            <a className="secondary-button" href="">Шалость</a>
+            <div className={pressedButton?"secondary-button-pressed secondary-button ":"secondary-button"} onClick={()=>setPressedButton(true)} href="">Шалость</div>
             </div>
         </nav>
     )
